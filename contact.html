@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | Wan Lydia</title>
+    <link rel="stylesheet" href="stylesheets\stylesheet.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/zlq4bgy.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="images\Face.png" alt=“Logo” width="100px">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a class="active" href="contact.html">contact</a></li>
+        </ul> 
+    </nav>
+    
+    <h1 class="title">Contact Me</h1>
+
+    <div class="section">
+        <div class="text-left"> 
+            <p>Keen to work with me? You can submit the form on the right or
+                find me in one of these platforms:</p>
+        </div>
+
+        <div class="container">
+            <form action="doContact.php" method="post">
+                <label for="idName" class="required">Name</label>:<br/>
+                <input name="name" size="35" maxlength="100" type="text" required
+                        placeholder="e.g. Jane Doe" id="idName"/><br/><br/>
+                
+                <label for="idEmail" class="required">Email</label>:<br/>
+                <input name="email" size="35" maxlength="100" type="email" required
+                        placeholder="e.g. janedoe@email.com" id="idEmail"/><br/><br/>
+
+                <label for="idMessage" class="required">Message</label>:<br/>
+                <input name="message" size="35" maxlength="100" type="text" required
+                        placeholder="Enter your message here..." id="idMessage"/><br/><br/>
+            <br/><br/>
+                <input type="submit"/>
+            </form>
+        </div>
+    </div> 
+</body>
