@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Home | Wan Lydia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheets\stylesheet.css"> 
     <link rel="stylesheet" href="https://use.typekit.net/zlq4bgy.css">
+
+    <title>Contact | Wan Lydia</title>
 </head>
 
 <body>
-    <nav class="nav">
+    <div id="nav">
         <img src="images\Face.png" alt=“Logo” width="100px">
         <ul>
             <li><a href="index.html">home</a></li>
@@ -16,17 +21,39 @@
             <li><a href="portfolio.html">portfolio</a></li>
             <li><a class="active" href="contact.html">contact</a></li>
         </ul> 
-    </nav>
+    </div>
     
-    <h1 class="title">Contact Me</h1>
+    <div id="contact">
+        <h1 class="title">Contact Me</h1>
 
-    <div class="section">
-        <div class="text-left"> 
             <p>Keen to work with me? You can submit the form on the right or
                 find me in one of these platforms:</p>
+
+            <div class="container">
+                <form action="action_page.php">
+            
+                <label for="name">Name</label><br>
+                <input type="text" class="required" id="fname" name="firstname" placeholder="Jane Doe">
+            
+                <br>
+
+                <label for="email">Email</label><br>
+                <input type="email" class="required" id="lname" name="lastname" placeholder="janedoe@gmail.com">
+            
+                <br>
+
+                <label for="message">Message</label><br>
+                <textarea id="subject" class="required" name="subject" placeholder="Write your message here..."></textarea>
+            
+                <br><br>
+
+                <input type="submit" value="Submit">
+            
+                </form>
+            </div> 
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <form action="doContact.php" method="post">
                 <label for="idName" class="required">Name</label>:<br/>
                 <input name="name" size="35" maxlength="100" type="text" required
@@ -42,6 +69,6 @@
             <br/><br/>
                 <input type="submit"/>
             </form>
-        </div>
+        </div> -->
     </div> 
 </body>
