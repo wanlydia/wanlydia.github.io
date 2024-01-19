@@ -1,5 +1,4 @@
 * {
-    /* background-color: #212B51; */
     color: #F2BB36;
     font-family: "montserrat";
     font-size: 25px;
@@ -14,7 +13,8 @@ body {
 }
 
 ::selection {
-    background: #0d1531d7;
+    background: #F2BB36;
+    color: aliceblue;
 }
 
 h1 {
@@ -31,6 +31,10 @@ h2 {
     font-size: 44px;
     text-align: center;
     color: aliceblue;
+}
+
+p {
+    text-align: center;
 }
 
 /* NAVIGATION */
@@ -80,7 +84,7 @@ h2 {
 /* INDEX */
 
 .button {
-    background-color: #d99b27;
+    background-color: #F2BB36;
     font-family: "chippewa-falls";
     font-weight: 500;
     font-size: 35px;
@@ -90,20 +94,28 @@ h2 {
     border-radius: 30px;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 42%;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
   .button:hover {
-    background-color: #212B51;
+    background-color: #d99b27;
+    color: #212B51;
   }
 
 /* PORTFOLIO */
+
+.pd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .row {
     margin: 0 -5px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -120,7 +132,7 @@ h2 {
     position: relative;
 }
 
-.card> img {
+.card img {
     height: 250px;
     width: 90%;
     border-radius: 30px; 
@@ -134,7 +146,6 @@ h2 {
     color: #212B51;
 }
 
-/* To stretch the link on top of the card div */
 .card-link {
     position: absolute;
     top: 0;
@@ -164,7 +175,8 @@ input[type=text], select, textarea {
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
+    resize: vertical;
+    font-size: 19px;
 }
 
 input[type=email], select, textarea {
@@ -175,10 +187,10 @@ input[type=email], select, textarea {
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
+    resize: vertical;
+    font-size: 19px;
 }
   
-  /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #d99b27;
     font-family: "chippewa-falls";
@@ -191,12 +203,10 @@ input[type=email], select, textarea {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #212B51;
   }
   
-  /* Add a background color and some padding around the form */
   .container {
     border-radius: 20px;
     background-color: #F2BB36;
@@ -205,135 +215,3 @@ input[type=email], select, textarea {
     position: absolute;
     right: 50px;
   }
-
-/*.greetings {
-    font-size: 90px;
-    color: #F2BB36;
-    margin: 0;
-}
-
-.title {
-    text-align: center;
-    font-size: 80px;
-    color: #F2BB36;
-    padding: 90px;
-}
-
-.hero {
-    text-align: center;
-    align-content: center;
-    padding: 300px;
-}
-
-.hero p {
-    padding: 0;
-    margin: 5px;
-    font-size: 35px;
-    color: aliceblue;
-}
-
-.hero h6 {
-    font-family: "chippewa-falls";
-    padding: 0;
-    margin: 5px;
-    font-size: 35px;
-    font-weight: 500;
-    color: aliceblue;
-}
-
-.section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 0px;
-    margin: 40px;
-    } */
-
-.image-left{ 
-    width: 50%;
-}
-.image-right{ 
-    width: 50%;
-}
-.text-right { 
-    width: 50%;
-} 
-.text-left { 
-    width: 50%;
-} 
-
-/* .text {
-    margin: 40px;
-}
-.text a {
-    text-align: right;
-}
-.portfolio {
-    text-align: center;
-    margin: 100px;
-}
-
-.button {
-    font-family: "chippewa-falls";
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 40px; 
-    padding: 10px 20px 15px 20px;
-    border-radius: 47px; 
-    color: aliceblue;
-    background: #E69709;
-    text-decoration: none; 
-    display: inline-block;
-}
-
-.button:hover {
-    color: aliceblue;
-    background: #0d1531;
-}
-
-.container {
-    width: 0%;
-    border-radius: 5px;
-    background: #F2BB36;
-    padding: 20px;
-}
-
-.portfolio_grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    align-items: center;    
-    }
-    
-    .cards-1 { grid-area: 1 / 1 / 2 / 2; }
-    .cards-2 { grid-area: 1 / 2 / 2 / 3; }
-    .cards-3 { grid-area: 1 / 3 / 2 / 4; }
-
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 230px;
-    border-radius: 20px;
-    background-color: #F2BB36;
-}
-  
-  .rectangle {
-    border-radius: 15px 15px 0 0;
-    margin: 15px;
-    height: 250px;
-    background-color:aliceblue;
-  }
-  
-  .container {
-    height: 90px;
-  }
-
-  .container h4 {
-    font-family: "chippewa-falls";
-    background-color: #F2BB36;
-    color: #212B51;
-  } */
